@@ -144,17 +144,7 @@
 				android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:hardwareAccelerated="false" />
 
 			<!--suppress AndroidDomInspection -->
-			<activity android:name="com.jirbo.adcolony.AdColonyOverlay"
-				android:configChanges="keyboardHidden|orientation|screenSize"
-				android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
-			<!--suppress AndroidDomInspection -->
-			<activity android:name="com.jirbo.adcolony.AdColonyFullscreen"
-				android:configChanges="keyboardHidden|orientation|screenSize"
-				android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
-			<!--suppress AndroidDomInspection -->
-			<activity android:name="com.jirbo.adcolony.AdColonyBrowser"
-				android:configChanges="keyboardHidden|orientation|screenSize"
-				android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+
 
 			<!--suppress AndroidDomInspection -->
 			<activity android:name="com.vungle.publisher.VideoFullScreenAdActivity"
@@ -187,29 +177,6 @@
 				android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
 				android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
-			<activity android:name="com.mobvista.msdk.offerwall.view.MVOfferWallActivity"
-				android:configChanges="screenSize|orientation"
-				android:screenOrientation="portrait" />
-			<activity android:name="com.mobvista.msdk.offerwall.view.MVOfferWallRewardVideoActivity"
-				android:configChanges="keyboardHidden|orientation|screenSize"
-				android:screenOrientation="landscape"
-				android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-			<activity android:name="com.mobvista.msdk.reward.player.MVRewardVideoActivity"
-				android:configChanges="orientation|keyboardHidden|screenSize"
-				android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-			<activity android:name="com.mobvista.msdk.videofeeds.vfplayer.VideoFeedsActivity"
-				android:configChanges="keyboardHidden|orientation|screenSize"
-				android:screenOrientation="portrait" />
-			<activity android:name="com.mobvista.msdk.out.LoadingActivity" />
-			<activity android:name="com.mobvista.msdk.interstitial.view.MVInterstitialActivity"
-				android:configChanges="orientation|screenSize"
-				android:screenOrientation="portrait"
-				android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-			<activity android:name="com.mobvista.msdk.shell.MVActivity"
-				android:configChanges="keyboard|orientation"
-				android:screenOrientation="portrait"
-				android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
-
 			<!--suppress AndroidDomInspection -->
 			<activity android:name="com.tapjoy.TJAdUnitActivity" android:configChanges="orientation|keyboardHidden|screenSize"
 				android:hardwareAccelerated="true" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
@@ -232,11 +199,7 @@
 				android:hardwareAccelerated="true" android:theme="@android:style/Theme.Translucent" />
 
 			<!--suppress AndroidDomInspection -->
-			<activity android:name="com.adcolony.sdk.AdColonyInterstitialActivity" android:configChanges="keyboardHidden|orientation|screenSize"
-				android:hardwareAccelerated="true"/>
-			<!--suppress AndroidDomInspection -->
-			<activity android:name="com.adcolony.sdk.AdColonyAdViewActivity" android:configChanges="keyboardHidden|orientation|screenSize"
-				android:hardwareAccelerated="true"/>
+			
 
 			<activity android:name="com.inmobi.rendering.InMobiAdActivity" android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize|screenLayout"
 				android:hardwareAccelerated="true" android:resizeableActivity="false" android:theme="@android:style/Theme.NoTitleBar" />
@@ -259,22 +222,9 @@
         <source-file src="libs/Android/yandex-metrica-2.73.jar" target-dir="libs" />
 		<source-file src="libs/Android/appodeal-banner-view-2.3.0.jar" target-dir="libs" />
         <framework src="src/android/dependency_fix.gradle" custom="true" type="gradleReference" />
-		<source-file src="libs/Android/mobvista_alphab.jar" target-dir="libs" />
-		<source-file src="libs/Android/mobvista_appwallext.jar" target-dir="libs" />
-		<source-file src="libs/Android/mobvista_mvjscommon.jar" target-dir="libs" />
-        <framework src="libs/Android/adcolony" custom="true" />
-		<framework src="libs/Android/mobvista_appwall" custom="true" />
-		<framework src="libs/Android/mobvista_common" custom="true" />
-		<framework src="libs/Android/mobvista_interstitial" custom="true" />
-		<framework src="libs/Android/mobvista_mvdownloads" custom="true" />
-		<framework src="libs/Android/mobvista_mvnative" custom="true" />
-		<framework src="libs/Android/mobvista_nativeex" custom="true" />
-		<framework src="libs/Android/mobvista_offerwall" custom="true" />
-		<framework src="libs/Android/mobvista_playercommon" custom="true" />
-		<framework src="libs/Android/mobvista_reward" custom="true" />
-		<framework src="libs/Android/mobvista_videocommon" custom="true" />
-		<framework src="libs/Android/mobvista_videofeeds" custom="true" />
-		
+
+
+
     </platform>
 
     <platform name="ios">
@@ -338,9 +288,7 @@
         <!-- Appodeal -->
         <framework custom="true" src="libs/iOS/Appodeal/Appodeal.framework"/>
         <resource-file src="libs/iOS/Appodeal/Appodeal.bundle"/>
-        <!-- AdColony -->
-        <framework custom="true" src="libs/iOS/Adapters/APDAdColonyAdapter.embeddedframework/AdColony.framework"/>
-        <source-file src="libs/iOS/Adapters/APDAdColonyAdapter.embeddedframework/libAPDAdColonyAdapter.a" framework="true"/>
+
         <!-- Amazon -->
         <framework custom="true" src="libs/iOS/Adapters/APDAmazonAdsAdapter.embeddedframework/AmazonAd.framework"/>
         <source-file src="libs/iOS/Adapters/APDAmazonAdsAdapter.embeddedframework/libAPDAmazonAdsAdapter.a" framework="true"/>
