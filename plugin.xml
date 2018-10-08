@@ -289,9 +289,6 @@
         <framework custom="true" src="libs/iOS/Appodeal/Appodeal.framework"/>
         <resource-file src="libs/iOS/Appodeal/Appodeal.bundle"/>
 
-        <!-- Amazon -->
-        <framework custom="true" src="libs/iOS/Adapters/APDAmazonAdsAdapter.embeddedframework/AmazonAd.framework"/>
-        <source-file src="libs/iOS/Adapters/APDAmazonAdsAdapter.embeddedframework/libAPDAmazonAdsAdapter.a" framework="true"/>
         <!-- Applovin -->
         <framework custom="true" src="libs/iOS/Adapters/APDAppLovinAdapter.embeddedframework/AppLovinSdk.framework"/>
         <source-file src="libs/iOS/Adapters/APDAppLovinAdapter.embeddedframework/libAPDAppLovinAdapter.a" framework="true"/>
