@@ -23,7 +23,7 @@
     "phonegap",
     "npm",
     "ads",
-	  "monetisation",
+    "monetisation",
     "ecosystem:cordova",
     "cordova-android"
   ],
